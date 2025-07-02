@@ -1,0 +1,158 @@
+:root {
+    --primaryColor: #FF2E32;
+    --accentColor: #B19D55;
+    --secaccentColor: #a6b4a3;
+    --darkbg: #121212;
+    --white: #fff;
+    --bodyText: "Inter", sans-serif;
+    --headFont: "Merriweather", serif;
+    --subheadFont: "Nanum Pen Script", cursive;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--bodyText);
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: var(--headFont);
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: var(--subheadFont);
+}
+
+img {
+    display: block;
+    max-width: 100% !important;
+}
+
+/* ==== Header ==== */
+
+.header {
+    background-color: var(--darkbg) !important;
+}
+
+.logo {
+    width: 250px;
+}
+
+.navigation {
+    width: 100%;
+    background-color: var(--darkbg);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 0.3s ease;
+}
+
+.nav-logo {
+    position: absolute;
+    width: 150px;
+    top: 5%;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: var(--white);
+}
+
+.nav-open {
+    font-size: 1.5rem;
+}
+
+.nav-close {
+    font-size: 1.7rem;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.nav-item .active {
+    color: var(--primaryColor) !important;
+}
+
+.nav-item .nav-link:hover:not(.nav-order) {
+    color: var(--primaryColor) !important;
+}
+
+.nav-order {
+    background-color: var(--primaryColor) !important;
+    color: var(--white) !important;
+}
+
+/* ==== Hero Section ==== */
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../assets/kilimanjaro\ jamani.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--white);
+}
+
+.intro-heading {
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.intro-head {
+    color: var(--accentColor);
+    font-family: var(--subheadFont);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.intro-text {
+    font-family: var(--subheadFont);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.hero-btn {
+    background-color: var(--primaryColor) !important;
+    color: var(--white) !important;
+}
+
+
+@media screen and  (min-width: 600px) {
+    .navigation {
+        width: unset;
+        position: static;
+        height: auto;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+}
