@@ -219,13 +219,16 @@ img {
     font-size: 1.2rem;
 }
 
-.menu-link {
+.menu-link, .event-link {
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
     color: var(--accentColor);
     text-decoration: none;
     border-bottom: 2px solid var(--accentColor);
 }
 
-.menu-link svg {
+.menu-link svg, .event-link svg {
   position: relative;
   top: 0;
   margin-left: 10px;
@@ -261,6 +264,54 @@ img {
     background-color: var(--secaccentColor);
 }
 
+/* ==== Event ==== */
+
+.event-cont {
+    box-shadow: 0 0 10px #ddd;
+}
+
+
+/* ==== Testimonials ==== */
+
+.testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../assets/pexels-valeriya-1639562.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+}
+
+.test-cont {
+    position: relative;
+    height: 100%;
+}
+
+.test {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.testimonies::before {
+    content: '"';
+    font-size: 2.4rem;
+    color: var(--primaryColor);
+    font-family: var(--headFont);
+}
+
+
+/* ==== Footer ==== */
+
+.socials a {
+    color: var(--white);
+}
+
+.socials a:hover {
+    color: var(--primaryColor);
+    transform: scale(0.8);
+}
 
 @media screen and  (min-width: 768px) {
     .navigation {
