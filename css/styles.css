@@ -139,6 +139,29 @@ img {
     color: var(--white) !important;
 }
 
+/* ==== Menu Sec ==== */
+
+.slide-cont {
+    border-radius: 10px 10px 0 0;
+}
+
+.menu-content {
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.mc-1 {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) ,url(../assets/burger.jpg);
+}
+
+.mc-2 {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../assets/drink.jpg);
+}
+
 
 @media screen and  (min-width: 600px) {
     .navigation {
@@ -156,3 +179,4 @@ img {
     }
 
 }
+
