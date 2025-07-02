@@ -28,11 +28,11 @@ body {
     font-size: 1rem;
 }
 
-h1 {
+h1, h2 {
     font-family: var(--headFont);
 }
 
-h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
     font-family: var(--subheadFont);
 }
 
@@ -219,7 +219,50 @@ img {
     font-size: 1.2rem;
 }
 
-@media screen and  (min-width: 600px) {
+.menu-link {
+    color: var(--accentColor);
+    text-decoration: none;
+    border-bottom: 2px solid var(--accentColor);
+}
+
+.menu-link svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--primaryColor);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+/* ==== Delivery Order ==== */
+
+.del-img img {
+    height: 150px;
+    width: 100%;
+}
+
+.del-content h2 {
+    font-family: var(--headFont);
+}
+
+.part-logo {
+    border-radius: 50%;
+    width: 50px;
+}
+
+
+/* ==== About ==== */
+
+.about {
+    background-color: var(--secaccentColor);
+}
+
+
+@media screen and  (min-width: 768px) {
     .navigation {
         width: unset;
         position: static;
