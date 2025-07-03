@@ -40,7 +40,7 @@
                         <li class="nav-item"><a href="" class="nav-link">Gallery</a></li>
                         <li class="nav-item"><a href="" class="nav-link">Our Staff</a></li>
                         <li class="nav-item"><a href="" class="nav-link">Events</a></li>
-                        <li class="nav-item"><a href="" class="nav-link nav-order ms-2">Order Now</a></li>
+                        <li class="nav-item"><a href="" class="nav-link nav-order ms-2"><span>Order Now</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -58,8 +58,8 @@
 
         <main>
 
-            <section id="menu-sec">
-                <div class="menu-sec container mt-5 d-flex flex-column align-items-center">
+            <section id="menu-sec" class="my-5 py-5">
+                <div class="menu-sec d-flex flex-column align-items-center">
 
                     <div class="f-menu carousel slide" style="width: 80%; height: 400px; overflow: hidden;" data-bs-ride="carousel" data-bs-interval="3000" id="mySlide">
                         <div class="carousel-inner h-100 slide-cont">
@@ -80,7 +80,7 @@
                     </div>
 
                     <div class="menus s-menu">
-                        <article class="menu-item">
+                        <div class="menu-item">
                             <div class="menu-cont">
                                 <h3 class="food-item">Pizza</h3>
                                 <p class="price-text">Price /.</p>
@@ -89,11 +89,11 @@
                             <div class="menu-img">
                                 <img src="assets/piza.jpg" alt="pizza" class="img-fluid" />
                             </div>
-                        </article>
+                        </div>
                     </div>
 
                     <div class="menus t-menu ">
-                        <article class="menu-item">
+                        <div class="menu-item">
                             <div class="menu-img">
                                 <img src="assets/fish menu.jpg" alt="fish" class="img-fluid" />
                             </div>
@@ -102,27 +102,28 @@
                                 <p class="price-text">Price /.</p>
                                 <p class="price">KSH 450</p>
                             </div>
-                        </article>
+                        </div>
                     </div>
 
-                    <a href="" class="menu-link py-1 mt-3">
+                    
+
+                </div>
+                <a href="" class="menu-link py-1 mt-3">
                         View Menu
                         <svg width="15px" height="10px" viewBox="0 0 13 10">
     <path d="M1,5 L11,5"></path>
     <polyline points="8 1 12 5 8 9"></polyline>
   </svg>
                     </a>
-
-                </div>
             </section>
 
             <!-- Delivery Order -->
             
             <section id="delivery">
                 <div class="delivery container-fluid mt-5">
-                    <div class="container">
+                    <div class="row justify-content-md-center">
 
-                        <div class="del-img row gap-3 justify-content-start">
+                        <div class="del-img col-md-5 row gap-3 justify-content-start">
                             <div class="col-5">
                                 <img src="assets/del1.jpg" alt="del1" class="img-fluid" />
                             </div>
@@ -140,7 +141,7 @@
                             </div>
                         </div>
 
-                        <div class="del-content mt-5 mt-md-0">
+                        <div class="del-content col-md-5 mt-5 mt-md-0">
                             <article>
                                 <h3 style="color: var(--accentColor)">Get your food delivered to your door</h3>
                                 <h2 class="mb-4">Door Delivery</h2>
@@ -148,7 +149,7 @@
                                 <p>Email: kilimanjarojamai@gmail.com</p>
                             </article>
 
-                            <article class="mt-5">
+                            <article class="mt-3">
                                 <h2>Partners</h2>
                                 <div class="partners d-flex gap-3 mt-4">
                                     <div>
@@ -179,19 +180,19 @@
             
             <section id="about">
                 <div class="container-fluid about mt-5">
-                    <div class="row justify-content-center py-5">
+                    <div class="row justify-content-center py-5 gap-4">
 
                         <div class="about-content col-12 col-md-6 text-white d-flex flex-column justify-content-center align-items-center">
                             <h2 class="mb-4">About Us</h2>
-                            <p>
-                                lorem ipsum lorem ipsum lorem ipsum lorem ipsum<br>
-                                lorem ipsum lorem ipsum lorem ipsum lorem ipsum<br>
+                            <p class="text-center text-wrap w-100">
+                                lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                lorem ipsum lorem ipsum lorem ipsum lorem ipsum
                                 lorem ipsum lorem ipsum lorem ipsum
                             </p>
-                            <a href="" class="btn btn-light mt-3 px-4">Learn More</a>
+                            <a href="" class="btn about-link mt-3 px-4">Learn More</a>
                         </div>
 
-                        <div class="about-img col-8 col-md-6">
+                        <div class="about-img col-10 col-md-5">
                             <img src="assets/jamani3.jpeg" class="img-fluid w-75 mx-auto" />
                         </div>
                     </div>
@@ -205,8 +206,8 @@
                     <h2 class="text-center">Upcoming Events</h2>
                     <div class="row mt-5 gap-5 justify-content-center">
 
-                        <div class="col-10 col-md-3 event-cont px-0">
-                            <img src="assets/event2.jpg" alt="event2" class="img-fluid event-img" />
+                        <div class="col-10 col-md-3 event-cont mt-5 px-0">
+                            <img src="assets/event2.png" alt="event2" class="img-fluid event-img" />
 
                             <div class="event-content p-3 mt-3">
                                 <h3 class="mb-3">Islamic New Year</h3>
@@ -320,7 +321,7 @@
                         <div class="location-footer col-10 col-lg-3">
                             <h2 class="mb-3">Location</h2>
                             <p><i class="ri-map-pin-fill"></i> Kimathi St, Nairobi</p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8180696707404!2d36.8188631752153!3d-1.2829938356230344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f118196cd03df%3A0x44b436209b547864!2sKilimanjaro%20Jamia%2C%20Kimathi%20Street!5e0!3m2!1sen!2ske!4v1751483833242!5m2!1sen!2ske" style="width: 80%; height: 250px; border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8180696707404!2d36.8188631752153!3d-1.2829938356230344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f118196cd03df%3A0x44b436209b547864!2sKilimanjaro%20Jamia%2C%20Kimathi%20Street!5e0!3m2!1sen!2ske!4v1751483833242!5m2!1sen!2ske" class="maps" style="width: 80%; height: 220px; border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             
                         </div>
                     
