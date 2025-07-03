@@ -316,7 +316,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 500px;
 
 }
 
@@ -349,6 +349,18 @@ img {
 .socials a:hover {
     color: var(--primaryColor);
     transform: scale(0.8);
+}
+
+@media screen and (min-width: 576px) {
+    .testimonials {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .test {
+        height: 400px !important;
+    }
 }
 
 @media screen and  (min-width: 768px) {
