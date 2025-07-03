@@ -181,11 +181,11 @@ img {
 }
 
 .mc-1 {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) ,url(../assets/burger.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url(../assets/burger.jpg);
 }
 
 .mc-2 {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../assets/drink.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../assets/drink.jpg);
 }
 
 .menu-text {
